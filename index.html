@@ -1,64 +1,168 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" type="text/css" media="screen" href="./style.css">
-        <style>
-          @font-face {
-            font-family: 'Inter';
-            src: url('/fonts/Inter/Inter-VariableFont_opsz\,wght.ttf') format('opentype');
-            font-weight: normal;
-            font-style: normal;
-          }
-      
-          @font-face {
-            font-family: 'Inter';
-            src: url('/fonts/Inter/Inter-VariableFont_opsz\,wght.ttf') format('opentype');
-            font-weight: bold;
-            font-style: normal;
-          }
-      
-          body {
-            font-family: 'Inter', sans-serif;
-          }
-        </style>
-      </head>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="./style.css" />
+  <title>Figma Land</title>
+</head>
 <body>
-  <div class="hero">
-    <nav class="navbar custom-navbar fixed-top">
-        <div class="container d-flex justify-content-between align-items-center">
-          
-          <!-- Left Nav Links -->
-          <div class="d-flex gap-4 nav-links align-items-center">
-            <a href="#" class="nav-link-custom active">Home</a>
-            <a href="#" class="nav-link-custom">Product</a>
-            <a href="#" class="nav-link-custom">Pricing</a>
-            <a href="#" class="nav-link-custom">About</a>
-            <a href="#" class="nav-link-custom">Contact</a>
-          </div>
-      
-          <!-- Centered Logo -->
-          <div class="navbar-brand mx-auto">
-            <img src="/img/center.png" alt="Logo" height="40">
-          </div>
-      
-          <!-- Right Socials -->
-          <div class="d-flex gap-3 social-icons align-items-center">
-            <a href="#"><img src="/img/Vector.png" width="24" alt="Twitter"></a>
-            <a href="#"><img src="/img/Vector (1).png" width="24" alt="Facebook"></a>
-            <a href="#"><img src="/img/Vector (2).png" width="24" alt="LinkedIn"></a>
-          </div>
-          
-        </div>
-      </nav>      
-      
 
+  <!-- HERO SECTION -->
+  <div class="hero">
+
+    <!-- NAVBAR -->
+    <nav class="navbar">
+      <div class="nav-container">
+
+
+        <!-- Burger menu for mobile -->
+        <div class="burger" id="burger">
+          <span></span>
+          <span></span>
+          <span></span>
+       </div>
+        
+        <!-- Left: Nav links -->
+        <div class="nav-links">
+          <a href="#" class="nav-link">Home</a>
+          <a href="#" class="nav-link">Product</a>
+          <a href="#" class="nav-link">Pricing</a>
+          <a href="#" class="nav-link">About</a>
+          <a href="#" class="nav-link">Contact</a>
+        </div>
+
+        <!-- Center: Logo -->
+        <div class="logo">
+          <img src="/img/center.png" alt="Figma Land Logo">
+        </div>
+
+        <!-- Right: Social icons -->
+        <div class="social-icons">
+          <a href="#"><img src="/img/Vector.png" alt="Twitter"></a>
+          <a href="#"><img src="/img/Vector (1).png" alt="Facebook"></a>
+          <a href="#"><img src="/img/Vector (2).png" alt="LinkedIn"></a>
+        </div>
+
+      </div>
+    </nav>
+
+    <!-- Hero Text Content -->
     <div class="hero-content">
       <h1>The best products start with Figma</h1>
-      <p>Most calendars are designed for teams. Slate is designed for freelancers</p>
+      <p>Most calendars are designed for teams. Slate is designed for freelancers.</p>
       <button class="cta-button">Try For Free</button>
     </div>
   </div>
+
+  <!-- FEATURES SECTION -->
+  <section class="features">
+    <div class="container">
+      <h2 class="section-title">Features</h2>
+      <p class="section-subtitle">
+        Most calendars are designed for teams.<br>
+        Slate is designed for freelancers.
+      </p>
+
+      <div class="features-grid">
+
+        <!-- Feature 1 -->
+        <div class="feature-item">
+          <img src="/img/mdi_shape.png" alt="OpenType Icon" class="feature-icon">
+          <h3 class="feature-title">
+            OpenType features<br><strong>Variable fonts</strong>
+          </h3>
+          <p class="feature-description">
+            Slate helps you see how many more days you need<br>
+            to work to reach your financial goal.
+          </p>
+        </div>
+
+        <!-- Feature 2 -->
+        <div class="feature-item">
+          <img src="/img/mdi_draw.png" alt="Design Icon" class="feature-icon">
+          <h3 class="feature-title"><strong>Design with real data</strong></h3>
+          <p class="feature-description">
+            Slate helps you see how many more days you need<br>
+            to work to reach your financial goal.
+          </p>
+        </div>
+
+        <!-- Feature 3 -->
+        <div class="feature-item">
+          <img src="/img/mdi_brush.png" alt="Action Icon" class="feature-icon">
+          <h3 class="feature-title"><strong>Fastest way to<br>take action</strong></h3>
+          <p class="feature-description">
+            Slate helps you see how many more days you need<br>
+            to work to reach your financial goal.
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- VIDEO SECTION -->
+  <section class="video-section">
+    <div class="video-wrapper">
+      <img src="/img/# screen content.png" alt="Video Preview" />
+      <div class="play-button">&#9658;</div>
+    </div>
+  </section>
+
+  <!-- FOOTER SECTION -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-columns">
+
+        <div class="footer-column">
+          <h4>Pages</h4>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Product</a></li>
+            <li><a href="#">Pricing</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-column">
+          <h4>Tomothy</h4>
+          <ul>
+            <li><a href="#">Eleanor Edwards</a></li>
+            <li><a href="#">Ted Robertson</a></li>
+            <li><a href="#">Annette Russell</a></li>
+            <li><a href="#">Jennie Mckinney</a></li>
+            <li><a href="#">Gloria Richards</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-column">
+          <h4>Jane Black</h4>
+          <ul>
+            <li><a href="#">Philip Jones</a></li>
+            <li><a href="#">Product</a></li>
+            <li><a href="#">Colleen Russell</a></li>
+            <li><a href="#">Marvin Hawkins</a></li>
+            <li><a href="#">Bruce Simmmons</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-column contact">
+          <p><img src="/img/Vector (4).png" alt="Location icon"> 1234 Street</p>
+          <p><img src="/img/Vector (5).png" alt="Phone icon"> (239) 555-0108</p>
+          <div class="social-icons">
+            <a href="#"><img src="/img/Vector.png" alt="Twitter"></a>
+            <a href="#"><img src="/img/Vector (1).png" alt="Facebook"></a>
+            <a href="#"><img src="/img/Vector (2).png" alt="LinkedIn"></a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+
 </body>
 </html>
