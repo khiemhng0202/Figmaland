@@ -26,7 +26,7 @@
 
     <!-- Center: Logo -->
     <div class="logo">
-      <img src="/img/center.png" alt="Figma Land Logo" />
+      <a href="#"><img src="/img/logo.png" alt="Figma Land Logo" /></a>
     </div>
 
     <!-- Right: Social icons -->
@@ -310,23 +310,25 @@
   
     <div class="contact-container">
       <!-- Contact Form -->
-      <div class="contact-form">
-        <h3>Contact Us</h3>
-        <input type="text" placeholder="Your Name" />
-        <input type="email" placeholder="Your Email" />
-        <textarea placeholder="Your Message"></textarea>
-        <button>Send</button>
-      </div>
+    <div class="contact-form">
+      <h3>Contact Us</h3>
+      <form action="#" method="POST">
+        <input type="text" name="name" placeholder="Your Name" required />
+        <input type="email" name="email" placeholder="Your Email" required />
+        <textarea name="message" placeholder="Your Message" required></textarea>
+        <button type="submit">Send</button>
+      </form>
+    </div>
   
       <!-- Contact Info -->
       <div class="contact-info">
         <div class="info-icons">
           <p>
-            <img src="/img/icon-destination.png" alt="Location" class="icon" />
+            <img src="/img/icon-destination-blue.png" alt="Location" class="icon" />
             6386 Spring St undefined Anchorage, Georgia 12473 United States
           </p>
           <p>
-            <img src="/img/icon-phone.png" alt="Phone" class="icon" />
+            <img src="/img/icon-phone-blue.png" alt="Phone" class="icon" />
             (843) 555-0130
           </p>
           <p>
@@ -334,13 +336,15 @@
             willie.jennings@example.com
           </p>
         </div>
+
+        
   
-        <img src="/img/map.png" alt="Map" class="map" />
+        <div style="position: relative;"><div style="position: relative; padding-bottom: 75%; height: 0; overflow: hidden;"><iframe style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" loading="lazy" allowfullscreen src="https://maps.google.com/maps?q=New+River+Gorge+Bridge%2C+West+Virginia&output=embed"></iframe></div><a href="https://appflowy.com/38d8e4b6-f3e7-4a8f-af67-dd50d4987bc5/Solar-Panels-Steubenville-Ohio" rel="noopener" target="_blank" style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0,0,0,0); white-space: nowrap; border: 0;">steubenville solar panels</a></div>
   
         <div class="social-icons">
-          <a href="#"><img src="/img/icon-twitter.png" alt="Twitter" class="icon" /></a>
-          <a href="#"><img src="/img/icon-facebook.png" alt="Facebook" class="icon" /></a>
-          <a href="#"><img src="/img/icon-linkedin.png" alt="LinkedIn" class="icon" /></a>
+          <a href="#"><img src="/img/icon-twitter-blue.png" alt="Twitter" class="icon" /></a>
+          <a href="#"><img src="/img/icon-facebook-blue.png" alt="Facebook" class="icon" /></a>
+          <a href="#"><img src="/img/icon-linkedin-blue.png" alt="LinkedIn" class="icon" /></a>
         </div>
       </div>
     </div>
@@ -375,7 +379,7 @@
         </div>
 
         <div class="footer-column">
-          <h4>Jane Black</h4>
+          <h4>Jane Black</h4> 
           <ul>
             <li><a href="#">Philip Jones</a></li>
             <li><a href="#">Product</a></li>
