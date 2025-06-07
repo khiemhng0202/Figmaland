@@ -4,6 +4,7 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link rel="stylesheet" href="./style.css" />
+  <link rel="stylesheet" href="./slick/slick.css" />
   <title>Figma Land</title>
 </head>
 <body>
@@ -196,53 +197,55 @@
       <button>Try For Free</button>
     </div>
   </section>
-
-  <section class="testimonials-section">
-    <h2>Testimonials</h2>
-    <div class="slider">
-      <div class="slides active">
-        <img src="/img/Google.png" alt="Google Logo" class="client-logo">
-        <p>Most calendars are designed for teams. Slate is designed for freelancers who want a simple way to plan their schedule.</p>
-        <div class="author">
-          <img src="/img/user1.png" alt="User 1">
-          <div>
-            <strong>Organize across</strong><br>
-            <span>UI designer</span>
-          </div>
+<section class="testimonials-section">
+  <h2>Testimonials</h2>
+  <div class="slider">
+    
+    <div class="slides active">
+      <img src="/img/Google.png" alt="Google Logo" class="client-logo">
+      <p>Most calendars are designed for teams. Slate is designed for freelancers who want a simple way to plan their schedule.</p>
+      <div class="author">
+        <img src="/img/user1.png" alt="User 1">
+        <div>
+          <strong>Organize across</strong><br>
+          <span>UI designer</span>
         </div>
-      </div>
-  
-      <div class="slides">
-        <img src="/img/ibm.png" alt="IBM Logo" class="client-logo">
-        <p>Most calendars are designed for teams. Slate is designed for freelancers who want a simple way to plan their schedule.</p>
-        <div class="author">
-          <img src="/img/user2.png" alt="User 2">
-          <div>
-            <strong>Organize across</strong><br>
-            <span>UI designer</span>
-          </div>
-        </div>
-      </div>
-  
-      <div class="slides">
-        <img src="/img/Microsoft.png" alt="Microsoft Logo" class="client-logo">
-        <p>Most calendars are designed for teams. Slate is designed for freelancers who want a simple way to plan their schedule.</p>
-        <div class="author">
-          <img src="/img/user1.png" alt="User 3">
-          <div>
-            <strong>Organize across</strong><br>
-            <span>UI designer</span>
-          </div>
-        </div>
-      </div>
-  
-      <div class="dots">
-        <span class="dot active" onclick="showSlide(0)"></span>
-        <span class="dot" onclick="showSlide(1)"></span>
-        <span class="dot" onclick="showSlide(2)"></span>
       </div>
     </div>
-  </section>
+
+    <div class="slides">
+      <img src="/img/ibm.png" alt="IBM Logo" class="client-logo">
+      <p>Most calendars are designed for teams. Slate is designed for freelancers who want a simple way to plan their schedule.</p>
+      <div class="author">
+        <img src="/img/user2.png" alt="User 2">
+        <div>
+          <strong>Organize across</strong><br>
+          <span>UI designer</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="slides">
+      <img src="/img/Microsoft.png" alt="Microsoft Logo" class="client-logo">
+      <p>Most calendars are designed for teams. Slate is designed for freelancers who want a simple way to plan their schedule.</p>
+      <div class="author">
+        <img src="/img/user1.png" alt="User 3">
+        <div>
+          <strong>Organize across</strong><br>
+          <span>UI designer</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="dots">
+      <span class="dot active" onclick="showSlide(0)"></span>
+      <span class="dot" onclick="showSlide(1)"></span>
+      <span class="dot" onclick="showSlide(2)"></span>
+    </div>
+    
+  </div>
+</section>
+
   
   <!-- PRICING SECTION -->
 
@@ -403,7 +406,8 @@
     </div>
   </footer>
 
+  <script src="./jquery.js"></script>
   <script src="script.js"></script>
-
+  <script src="./slick/slick.min.js"></script>
 </body>
 </html>

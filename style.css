@@ -476,81 +476,83 @@
   
 
   /* ===========================
-     TESTIMONIALS SECTION
-  =========================== */
+   TESTIMONIALS SECTION
+=========================== */
 
-  .testimonials-section {
-    text-align: center;
-    padding: 60px 20px;
-    background-color: #fff;
-    color: #2E3A59;
-  }
+.testimonials-section {
+  text-align: center;
+  padding: 60px 20px;
+  background-color: #fff;
+  color: #2E3A59;
+}
 
-  .client-logo {
-    height: 40px;
-    margin-bottom: 20px;
-  }
-  
-  
-  
-  .slider {
-    position: relative;
-    max-width: 800px;
-    margin: 0 auto;
-  }
-  
-  .slides {
-    display: none;
-    transition: all 0.5s ease;
-  }
-  
-  .slides.active {
-    display: block;
-  }
-  
-  .client-logo {
-    height: 40px;
-    margin-bottom: 20px;
-  }
-  
-  .slides p {
-    font-size: 1.1rem;
-    margin-bottom: 30px;
-    max-width: 600px;
-    margin-inline: auto;
-  }
-  
-  .author {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 10px;
-  }
-  
-  .author img {
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-  }
-  
-  .dots {
-    margin-top: 20px;
-  }
-  
-  .dot {
-    display: inline-block;
-    height: 10px;
-    width: 10px;
-    margin: 0 5px;
-    background-color: #ccc;
-    border-radius: 50%;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-  }
-  
-  .dot.active {
-    background-color: #2E3A59;
-  }
+.slider {
+  position: relative;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.slides {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+  z-index: 0;
+}
+
+.slides.active {
+  position: relative;
+  opacity: 1;
+  z-index: 1;
+}
+
+.client-logo {
+  height: 40px;
+  margin-bottom: 20px;
+}
+
+.slides p {
+  font-size: 1.1rem;
+  margin-bottom: 30px;
+  max-width: 600px;
+  margin-inline: auto;
+}
+
+.author {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.author img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+.dots {
+  margin-top: 20px;
+}
+
+.dot {
+  display: inline-block;
+  height: 10px;
+  width: 10px;
+  margin: 0 5px;
+  background-color: #ccc;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.dot.active {
+  background-color: #2E3A59;
+}
+
+
   
 /* ===========================
    PRICING SECTION
