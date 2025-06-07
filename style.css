@@ -493,24 +493,29 @@
 }
 
 .slides {
-  position: absolute;
+  /* position: absolute;
   top: 0;
-  left: 0;
+  left: 0; */
   width: 100%;
-  opacity: 0;
+  opacity: 1;
   transition: opacity 0.5s ease;
-  z-index: 0;
+  z-index: 1;
 }
 
-.slides.active {
+/* .slides.active {
   position: relative;
   opacity: 1;
   z-index: 1;
-}
+} */
 
 .client-logo {
   height: 40px;
   margin-bottom: 20px;
+  margin: auto;
+}
+
+.slick-dots li button:before {
+  font-size: 12px;
 }
 
 .slides p {
@@ -525,6 +530,7 @@
   align-items: center;
   justify-content: center;
   gap: 10px;
+  margin-bottom: 10px;
 }
 
 .author img {
